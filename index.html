@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <title>__huee_ — Everyday Streetwear</title>
+  <meta name="description" content="Discover everyday streetwear from __huee_.">
+  <style>
+    :root{--ink:#111;--paper:#f7f6f2;--muted:#777;--line:#e4e2dc;--white:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .announcement{background:var(--ink);color:white;text-align:center;padding:10px 12px;font-size:11px;letter-spacing:1.5px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 5%;background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+    .logo{font-size:27px;font-weight:900;letter-spacing:-1.5px}
+    nav{display:flex;gap:22px;font-size:13px}
+    .hero{padding:58px 5% 48px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+    .eyebrow{font-size:11px;letter-spacing:2px;font-weight:700;color:var(--muted)}
+    h1{font-size:clamp(42px,7vw,82px);line-height:.94;letter-spacing:-4px;margin:18px 0}
+    .hero p{max-width:420px;line-height:1.7;color:#555;font-size:15px}
+    .button{display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:white;padding:14px 20px;border:1px solid var(--ink);font-weight:700;font-size:12px;letter-spacing:.7px;cursor:pointer}
+    .button.outline{background:transparent;color:var(--ink)}
+    .hero-art{min-height:350px;background:#dedbd3;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+    .hero-art img{width:100%;height:100%;max-height:470px;object-fit:cover;position:absolute;inset:0}
+    .hero-art .fallback{font-size:clamp(45px,8vw,100px);font-weight:900;letter-spacing:-5px;transform:rotate(-8deg)}
+    section{padding:42px 5%}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:22px}
+    h2{font-size:30px;letter-spacing:-1.2px;margin:8px 0}
+    .section-head p{color:var(--muted);font-size:13px;margin:0}
+    .products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .product{min-width:0}
+    .product-image{aspect-ratio:4/5;background:#e6e3dc;overflow:hidden;display:flex;align-items:center;justify-content:center;position:relative}
+    .product-image img{width:100%;height:100%;object-fit:cover}
+    .product-image .placeholder{font-weight:900;font-size:24px;letter-spacing:-1px}
+    .product-info{padding:13px 0}
+    .product-title{font-weight:700;font-size:14px}
+    .price{font-size:13px;margin-top:7px}
+    .product label{display:block;font-size:11px;color:var(--muted);margin:12px 0 5px}
+    select{width:100%;padding:11px;border:1px solid #ccc;background:white;border-radius:0}
+    .product .button{width:100%;margin-top:10px}
+    .about{background:#e9e6df;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+    .about p{line-height:1.8;color:#555;max-width:540px}
+    .about-mark{font-size:clamp(45px,8vw,90px);font-weight:900;letter-spacing:-5px;text-align:center}
+    .contact{background:#111;color:white;text-align:center;padding:55px 5%}
+    .contact p{color:#c8c8c8;line-height:1.7}
+    .contact .button{background:white;color:#111;border-color:white;margin:8px}
+    .contact .button.outline{background:transparent;color:white}
+    footer{padding:22px 5%;display:flex;justify-content:space-between;gap:15px;font-size:11px;color:#666}
+    .note{font-size:12px;color:#777;line-height:1.6;margin-top:22px}
+    @media(max-width:700px){
+      header{padding:15px 4%}.logo{font-size:23px}nav{gap:12px;font-size:12px}
+      .hero{grid-template-columns:1fr;padding:38px 5% 28px;gap:22px}h1{letter-spacing:-2.5px}
+      .hero-art{min-height:280px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+      .product-title{font-size:13px}.section-head{align-items:start;flex-direction:column}
+      .about{grid-template-columns:1fr}.about-mark{padding:20px 0}section{padding:32px 5%}
+      footer{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement">WELCOME TO __HUEE_ · EVERYDAY STREETWEAR</div>
+  <header>
+    <a class="logo" href="#" aria-label="__huee_ home">__huee_</a>
+    <nav><a href="#shop">SHOP</a><a href="#about">OUR STORY</a><a href="#contact">CONTACT</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">NEW SEASON · DHAKA, BANGLADESH</div>
+        <h1>MADE TO<br>STAND OUT.</h1>
+        <p>Everyday essentials. Relaxed fits. Your own way of wearing the street. Discover the latest from __huee_.</p>
+        <a class="button" href="#shop">SHOP THE COLLECTION ↘</a>
+      </div>
+      <div class="hero-art">
+        <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1000&q=85" alt="Streetwear clothing collection" onerror="this.style.display='none'">
+        <div class="fallback">HU E E.</div>
+      </div>
+    </section>
+
+    <section id="shop">
+      <div class="section-head">
+        <div><div class="eyebrow">THE COLLECTION</div><h2>Shop essentials.</h2></div>
+        <p>Simple fits. Everyday comfort.</p>
+      </div>
+      <div class="products">
+        <article class="product">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=85" alt="Classic T-shirt" onerror="this.style.display='none'"><span class="placeholder">TEE 01</span></div>
+          <div class="product-info"><div class="product-title">Everyday Oversized Tee</div><div class="price">৳650</div>
+            <label for="size1">Choose size</label><select id="size1"><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select>
+            <button class="button" onclick="order('Everyday Oversized Tee','650','size1')">ORDER ON WHATSAPP</button>
+          </div>
+        </article>
+        <article class="product">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=85" alt="Casual streetwear top" onerror="this.style.display='none'"><span class="placeholder">TEE 02</span></div>
+          <div class="product-info"><div class="product-title">Essential Graphic Tee</div><div class="price">৳750</div>
+            <label for="size2">Choose size</label><select id="size2"><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select>
+            <button class="button" onclick="order('Essential Graphic Tee','750','size2')">ORDER ON WHATSAPP</button>
+          </div>
+        </article>
+        <article class="product">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=700&q=85" alt="Minimal T-shirt" onerror="this.style.display='none'"><span class="placeholder">TEE 03</span></div>
+          <div class="product-info"><div class="product-title">Relaxed Fit Tee</div><div class="price">৳600</div>
+            <label for="size3">Choose size</label><select id="size3"><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select>
+            <button class="button" onclick="order('Relaxed Fit Tee','600','size3')">ORDER ON WHATSAPP</button>
+          </div>
+        </article>
+      </div>
+      <p class="note">Starter demo: replace sample products, prices, photos and sizes with your real inventory before taking orders.</p>
+    </section>
+
+    <section class="about" id="about">
+      <div><div class="eyebrow">THE __HUEE_ POINT OF VIEW</div><h2>Wear what feels like you.</h2>
+        <p>__huee_ is built around personal style, everyday comfort and streetwear made for your own story. We're just getting started—and this is where the next chapter begins.</p>
+      </div>
+      <div class="about-mark">OWN<br>YOUR<br>STYLE.</div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="eyebrow">LET'S CONNECT</div><h2>Find your next favourite.</h2>
+      <p>Questions about fit, sizes or delivery? Message us and we'll help you out.</p>
+      <a class="button" href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener">WHATSAPP US</a>
+      <a class="button outline" href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener">FOLLOW ON INSTAGRAM</a>
+      <p class="note">Remember to replace the sample WhatsApp number and Instagram username in this file.</p>
+    </section>
+  </main>
+  <footer><span class="logo">__huee_</span><span>© 2026 __huee_. All rights reserved.</span><span>Made for everyday streetwear.</span></footer>
+
+  <script>
+    // IMPORTANT: Replace this with your WhatsApp number in international format.
+    // Bangladesh example format: 8801XXXXXXXXX (digits only; no + or spaces).
+    const WHATSAPP_NUMBER = "8801XXXXXXXXX";
+    function order(name, price, sizeId) {
+      if (WHATSAPP_NUMBER.includes("X")) {
+        alert("Website demo: first replace 8801XXXXXXXXX with your WhatsApp number in the HTML file.");
+        return;
+      }
+      const size = document.getElementById(sizeId).value;
+      const message = `Hi __huee_! I'd like to order:\nProduct: ${name}\nSize: ${size}\nPrice: ৳${price}\nPlease confirm availability and delivery charges.`;
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
+    }
+  </script>
+</body>
+</html>
